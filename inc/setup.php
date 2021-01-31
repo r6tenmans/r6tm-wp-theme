@@ -98,14 +98,23 @@ if ( ! function_exists( 'understrap_setup' ) ) {
 			apply_filters(
 				'understrap_custom_background_args',
 				array(
-					'default-color' => 'ffffff',
+					'default-color' => '000000',
 					'default-image' => '',
 				)
 			)
 		);
 
 		// Set up the WordPress Theme logo feature.
-		add_theme_support( 'custom-logo' );
+
+		add_theme_support(
+			'custom-logo',
+			array(
+				'height'      => 100,
+				'width'       => 100,
+				'flex-height' => false,
+				'flex-width'  => true,
+			)
+		);
 
 		// Add support for responsive embedded content.
 		add_theme_support( 'responsive-embeds' );
