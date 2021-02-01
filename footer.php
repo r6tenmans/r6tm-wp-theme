@@ -27,10 +27,34 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					<div class="site-info row justify-content-start">
 
-						<small class="font-weight-light">
+						<small class="font-weight-light container">
 
-							&copy; 2021 Ten Mans Management. All Rights Reserved.
-							
+							<div class="row justify-content-between">
+
+								<div class="ml-0">
+									<i class="fab fa-twitter fa-lg mr-2"></i>
+									<i class="fab fa-discord fa-lg"></i>
+								</div>
+
+								<div class="m-0">&copy; 2021 Ten Mans Management. All Rights Reserved.</div>
+
+								<?php
+								wp_nav_menu(
+									array(
+										'theme_location'  => 'secondary',
+										'container_class' => '',
+										'container_id'    => 'navbarNavDropdown',
+										'menu_class'      => 'nav justify-content-center',
+										'fallback_cb'     => '',
+										'menu_id'         => 'footer-menu',
+										'depth'           => 2,
+										'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+									)
+								);
+								?>
+								
+							</div>	
+								
 						</small>
 
 					</div><!-- .site-info -->
