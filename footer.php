@@ -32,8 +32,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<div class="row justify-content-between">
 
 								<div class="ml-0">
-									<i class="fab fa-twitter fa-lg mr-2"></i>
-									<i class="fab fa-discord fa-lg"></i>
+									<a href="https://twitter.com/R6TMs" target="_blank"><i class="fab fa-twitter fa-lg mr-2"></i></a>
+									<a href="https://discord.gg/tWQeehJ" target="_blank"><i class="fab fa-discord fa-lg"></i></a>
 								</div>
 
 								<div class="m-0">&copy; 2021 Ten Mans Management. All Rights Reserved.</div>
@@ -52,7 +52,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 									)
 								);
 								?>
-								
+
 							</div>	
 								
 						</small>
