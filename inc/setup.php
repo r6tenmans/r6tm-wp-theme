@@ -109,8 +109,8 @@ if ( ! function_exists( 'understrap_setup' ) ) {
 		add_theme_support(
 			'custom-logo',
 			array(
-				'height'      => 100,
-				'width'       => 100,
+				'height'      => 150,
+				'width'       => 150,
 				'flex-height' => false,
 				'flex-width'  => true,
 			)

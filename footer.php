@@ -23,11 +23,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<div class="col-md-12">
 
-				<footer class="site-footer" id="colophon">
+				<footer class="site-footer fixed-bottom container-fluid px-4 pb-1" id="colophon">
 
-					<div class="site-info">
+					<div class="site-info row justify-content-start">
 
-						<?php understrap_site_info(); ?>
+						<small class="font-weight-light">
+
+							&copy; 2021 Ten Mans Management. All Rights Reserved.
+							
+						</small>
 
 					</div><!-- .site-info -->
 
